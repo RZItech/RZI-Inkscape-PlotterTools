@@ -25,10 +25,21 @@ def generate_custom_interface(laser_off_command, laser_power_command, laser_off_
         def __init__(self):
             super().__init__()
 
-        def laser_off(self):
-            return f"{laser_off_command}"+"\n"+"G04 P"+f"{laser_off_delay}"+";"
-        def set_laser_power(self, _):
-            return f"{laser_power_command}"+"\n"+"G04 P"+f"{laser_power_delay}"+";"
+        if laser_off_delay == 0.0 :
+
+            def laser_off(self):
+                return f"{laser_off_command}"
+        else :
+
+            def laser_off(self):
+                return f"{laser_off_command}"+"\n"+"G04 P"+f"{laser_off_delay}"+";"
+        if laser_power_delay == 0.0 :
+
+            def set_laser_power(self, _):
+                return f"{laser_power_command}"
+        else :
+            def set_laser_power(self, _):
+                return f"{laser_power_command}"+"\n"+"G04 P"+f"{laser_power_delay}"+";"
 
     return CustomInterface
 
