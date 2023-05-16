@@ -1,6 +1,7 @@
 # RZI Inkscape2Laser
 
 A clone of [J-Tech-Photonics-Laser-Tool](https://github.com/JTechPhotonics/J-Tech-Photonics-Laser-Tool) 
+
 This Inkscape extension generates gcode for laser cutters and plotting machines from an SVG file.
 
 Version 1.0 released!
