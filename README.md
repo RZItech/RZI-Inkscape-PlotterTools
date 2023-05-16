@@ -1,6 +1,6 @@
 # RZI Inkscape2Laser
 
-A clone of [J-Tech-Photonics-Laser-Tool](https://github.com/JTechPhotonics/J-Tech-Photonics-Laser-Tool) 
+A clone of [J-Tech-Photonics-Laser-Tool](https://github.com/JTechPhotonics/J-Tech-Photonics-Laser-Tool)
 
 This Inkscape extension generates gcode for laser cutters and plotting machines from an SVG file.
 
@@ -39,7 +39,7 @@ Lastly, you can move and rescale your drawing to make it look like it did before
 This extension will parse all svg paths and ignore everything else.
 
 **Step 1 is to convert all other shapes to paths.** In this case I want to convert the whole drawing to gcode.
-So I select everything `ctr+A` and convert the drawing to paths
+So I select everything `CTRL+A` and convert the drawing to paths
 **Path** > **Object to Path**.
 
 Open the extension at **Extension** > **Generate Laser Gcode** > **J Tech Community Laser Tool**
@@ -47,7 +47,19 @@ Open the extension at **Extension** > **Generate Laser Gcode** > **J Tech Commun
 Select the **same unit** you used in the **Document Settings**. Then choose an appropriate output directory and
 hit apply.
 
-<img src="./images/important_settings.png" alt="important_settings.png" width="600" />
+<img src="./images/important_settings.png" alt="important_settings.png" width="800" />
+
+**The tool up/down delay is automatically set to 0.5**
+
+On pen plotters, this allows the pen to go up/down fully before moving, preventing markings.
+
+**Without delay 👇️**
+
+<img src="./images/Without_Delay.jpeg" alt="Without_Delay.jpeg" width="600" />
+
+**With delay 👇️**
+
+<img src="./images/With_Delay.jpeg" alt="With_Delay.jpeg" width="600" />
 
 You'll notice two layers were added to your document:
 
