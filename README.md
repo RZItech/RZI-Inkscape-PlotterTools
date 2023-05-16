@@ -42,7 +42,7 @@ This extension will parse all svg paths and ignore everything else.
 So I select everything `CTRL+A` and convert the drawing to paths
 **Path** > **Object to Path**.
 
-Open the extension at **Extension** > **Generate Laser Gcode** > **J Tech Community Laser Tool**
+Open the extension at **Extension** > **Generate Plotter Gcode** > **RZI Inkscape2Plotter**
 
 Select the **same unit** you used in the **Document Settings**. Then choose an appropriate output directory and
 hit apply.
